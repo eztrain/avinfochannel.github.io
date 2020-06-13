@@ -42,7 +42,7 @@ body,
   text-align: center;
 }
 .slide-content span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 280px;
   color: aliceblue;
 }
@@ -51,7 +51,7 @@ body,
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-top: -180px;
+  margin-top: -100px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -132,4 +132,29 @@ h3.heading {
 .card {
   margin: 2rem;
 }
-/*=============end joy of  photography  =============*/
+/*=============end of portfolio section  =============*/
+
+/*============= start develop yoru skills  =============*/
+
+.col-12 h1 {
+  font-size: 30px;
+}
+.col-12 p {
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+}
+
+.narrow {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+/*============= end develop your skilld  =============*/
