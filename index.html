@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>avinfo</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <link href="navbar-top-fixed.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- end nav section -->
+
+    <div class="">
+      <div id="arrow-left" class="arrow"></div>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <span>1/4 - patience is the word</span>
+          </div>
+        </div>
+
+        <div class="slide slide2">
+          <div class="slide-content">
+            <span>2/4 - relax</span>
+          </div>
+        </div>
+
+        <div class="slide slide3">
+          <div class="slide-content">
+            <span>3/4 - fishing village</span>
+          </div>
+        </div>
+
+        <div class="slide slide4">
+          <div class="slide-content">
+            <span>4/4 - bali beauty</span>
+          </div>
+        </div>
+      </div>
+      <div id="arrow-right" class="arrow"></div>
+
+      <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+          arrowLeft = document.querySelector("#arrow-left"),
+          arrowRight = document.querySelector("#arrow-right"),
+          current = 0;
+
+        //  clear all images
+
+        function reset() {
+          for (let i = 0; i < sliderImages.length; i++) {
+            sliderImages[i].style.display = "none";
+          }
+        }
+
+        // init slider
+        function startSlide() {
+          reset();
+          sliderImages[0].style.display = "block";
+        }
+
+        // show prev
+        function slideLeft() {
+          reset();
+          sliderImages[current - 1].style.display = "block";
+          current--;
+        }
+
+        // show next
+        function slideRight() {
+          reset();
+          sliderImages[current + 1].style.display = "block";
+          current++;
+        }
+
+        // left arrow click
+
+        arrowLeft.addEventListener("click", function () {
+          if (current === 0) {
+            current = sliderImages.length;
+          }
+          slideLeft();
+        });
+
+        // right arrow click
+
+        arrowRight.addEventListener("click", function () {
+          if (current === sliderImages.length - 1) {
+            current = -1;
+          }
+          slideRight();
+        });
+        startSlide();
+      </script>
+
+      <!--- Start foto idea Section -->
+
+      <div id="course" class="offset">
+        <div class="col-12 narrow text-center">
+          <h1>Joy of Photography</h1>
+          <p class="lead">
+            <br />
+            The joy of capturing images will immortalize our adventures for
+            years to come. Images of places, cultures, art and even food can
+            transport us back to that magical place and time that we once
+            experienced. <br />
+            <br />
+            Photography is the simultaneous recognition, in a fraction of a
+            second, that captures an event.
+          </p>
+          <a class="btn btn-secondary btn-md" href="ideas.html" target=""
+            >EZ foto idea</a
+          >
+        </div>
+      </div>
+      <!--- End foto idea Section -->
+
+      <!-- start portfolio section -->
+
+      <div id="portfolio" class="offset">
+        <div class="jumbotron container-fluid">
+          <div class="col-12 text-center">
+            <h3 class="heading">portfolio</h3>
+            <div class="heading-underline"></div>
+            <h3>the power of art</h3>
+          </div>
+
+          <div class="row no-padding">
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img src="img/500x750px/300-smokeman.png" alt="statue" />moai
+                man
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-streetart3.png"
+                  alt="street art"
+                />street art - kids
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-japart.png"
+                  alt="painting"
+                />japanese cherry blossom art
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-dragonart.png"
+                  alt="dragon statue"
+                />dragon sculpture
+                <h3></h3>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-malayart.png"
+                  alt="painting"
+                />malaysian history in art
+                <h3></h3>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-streetart1.png"
+                  alt="street art"
+                />street art - handiman
+                <h3></h3>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-fairylantern.png"
+                  alt="lantern"
+                />chinese fairy lantern
+                <h3></h3>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="portfolio">
+                <img
+                  src="img/500x750px/300-volkvagon.png"
+                  alt="car sculpture"
+                />volkswagon sculpture
+                <h3></h3>
+              </div>
+            </div>
+
+            <div class="narrow text-center">
+              <div class="col-12">
+                <h1>Develop your skills</h1>
+                <p class="lead">
+                  <br />
+                  There is a reason why we love taking countless pictures. The
+                  sharing of photos with family and friends and the thrill of
+                  bragging the story behind each image.<br />
+                  <br />Producing memorable images let us relive the time we
+                  once explored and experienced.
+                </p>
+                <a
+                  class="btn btn-secondary btn-md"
+                  href="fototips.html"
+                  target=""
+                  >foto tips</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end row no padding -->
+        </div>
+        <!-- end jumbotron-->
+      </div>
+      <!-- end portfolio section -->
+
+      <!--- start Team section --->
+
+      <div id="team" class="offset">
+        <div class="col-12 text-center">
+          <h3 class="heading">Team</h3>
+          <h4>meet the magicians</h4>
+          <div class="heading-underline"></div>
+        </div>
+      </div>
+
+      <div class="row padding">
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/team760x600/team1.png"
+              alt="image"
+            />
+            <div class="card-body">
+              <h4>red dragoness</h4>
+              <p>
+                you come<br />you learn <br />you enjoy <br />an experience
+                never forgotten
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/team760x600/team4.png"
+              alt="image"
+            />
+            <div class="card-body">
+              <h4>yellow dragon</h4>
+              <p>
+                enjoy the fun and laughter on a shooting assignment <br />get
+                the best of both worlds <br />
+                Film or Digital
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/team760x600/team2.png"
+              alt="image"
+            />
+            <div class="card-body">
+              <h4>iron the man</h4>
+              <p>
+                the Best in Aerial Photography <br />
+                you can't get any higher than this. <br />height is not an
+                option
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="img/team760x600/team6.png"
+              alt="image"
+            />
+            <div class="card-body">
+              <h4>black the panther</h4>
+              <p>
+                the Best in stunt action <br />punch or kick or jump <br />
+                you name it, <br />
+                lets do IT
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of row padding -->
+    </div>
+    <!-- end of team section -->
+
+    <!-- start gallery section -->
+
+    <div class="narrow text-center">
+      <div class="gallery">
+        <h1>Gallery</h1>
+        <p class="lead">
+          Producing memorable images let us relive the time we once explored and
+          experienced.
+        </p>
+        <a class="btn btn-secondary btn-md" href="#" target="">gallery</a>
+      </div>
+    </div>
+
+    <!-- end of gallery section -->
+
+    <!--- Script Source Files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"></script>
+    <!--- End of Script Source Files -->
+  </body>
+</html>
+
+<!-- end of web page -->
