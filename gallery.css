@@ -46,6 +46,12 @@ body {
   padding-top: 2rem;
   text-align: center;
 }
+.col-12 h1 {
+  font-size: 30px;
+}
+.col-12 p {
+  font-size: 18px;
+}
 
 .btn-lg {
   height: 50px;
