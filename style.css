@@ -6,7 +6,7 @@ body,
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   overflow-x: hidden;
 }
 .wrap {
@@ -50,7 +50,12 @@ body,
   margin-top: 280px;
   color: aliceblue;
 }
-
+.slide-content p {
+  color: floralwhite;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-top: 150px;
+}
 .arrow {
   cursor: pointer;
   position: absolute;
@@ -209,218 +214,205 @@ hr.socket {
 /*-- desktop size --*/
 
 @media only screen and (min-width: 1000px) {
-  
-
   #slider,
-.wrap,
-.slide-content {
-  margin: 35px;
-  padding-left: 0px;
-  padding-right: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 95vh;
-  overflow-x: hidden;
-}
-.wrap {
-  position: relative;
-}
-.navbar-brand img {
-  width: 100px;
-  margin-left: 50px;
-}
+  .wrap,
+  .slide-content {
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .wrap {
+    position: relative;
+  }
+  .navbar-brand img {
+    width: 100px;
+    margin-left: 50px;
+  }
 
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.slide1 {
-  background-image: url("img/bigfoto/home1.png");
-}
-.slide2 {
-  background-image: url("img/bigfoto/home2.png");
-}
-.slide3 {
-  background-image: url("img/bigfoto/fisherman2k.png");
-}
-.slide4 {
-  background-image: url("img/bigfoto/balidolls-18x16.png");
-}
-.slide5 {
-  background-image: url("img/bigfoto/r2d2-800.png");
-}
-.slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.slide-content span {
-  font-size: 2.5rem;
-  margin-top: 550px;
-  color: aliceblue;
-}
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .slide-content span {
+    font-size: 2.5rem;
+    margin-top: 550px;
+    color: aliceblue;
+  }
+  .slide-content p {
+    color: floralwhite;
+    font-family: sans-serif;
+    font-size: 55px;
+    margin-top: 250px;
+    letter-spacing: 3px;
+  }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  margin-top: -100px;
-  width: 100px;
-  height: 40px;
-  border-style: solid;
-}
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    margin-top: -100px;
+    width: 100px;
+    height: 40px;
+    border-style: solid;
+  }
 
-#arrow-left {
-  border-width: 30px 30px 30px 0;
-  border-color: transparent beige transparent transparent;
-  left: 0px;
-  margin-left: 30px;
-}
-#arrow-right {
-  border-width: 30px 0px 30px 30px;
-  border-color: transparent transparent transparent rgb(246, 246, 250);
-  right: 0;
-  margin-right: 30px;
-}
-/*=============joy of  photography  =============*/
+  #arrow-left {
+    border-width: 30px 30px 30px 0;
+    border-color: transparent beige transparent transparent;
+    left: 0px;
+    margin-left: 30px;
+  }
+  #arrow-right {
+    border-width: 30px 0px 30px 30px;
+    border-color: transparent transparent transparent rgb(156, 156, 243);
+    right: 0;
+    margin-right: 30px;
+  }
+  /*=============joy of  photography  =============*/
 
-#course h1 {
-  font-size: 40px;
-}
-#course p {
-  font-size: 25px;
-  padding: 0px 150px 0px 150px;
-}
+  #course h1 {
+    font-size: 40px;
+  }
+  #course p {
+    font-size: 25px;
+    padding: 0px 150px 0px 150px;
+  }
 
-.narrow {
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-.btn-md {
-  border-width: medium;
-  border-radius: 0;
-  padding: 0.6rem 1.1rem;
-  text-transform: uppercase;
-  margin: 1rem;
-}
+  .narrow {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+  }
 
-/*============= end joy of  photography  =============*/
+  /*============= end joy of  photography  =============*/
 
-/*=============portfolio section  =============*/
+  /*=============portfolio section  =============*/
 
-.jumbotron {
-  border-radius: 0;
-  padding: 3rem 0.2rem;
-  margin-bottom: 0;
-}
-h3.heading {
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 0.5rem;
-}
-.heading-underline {
-  width: 8rem;
-  height: 0.3rem;
-  background-color: rgb(241, 33, 43);
-  margin: 0 auto 2rem;
-}
-/*--- portfolio images ---*/
+  .jumbotron {
+    border-radius: 0;
+    padding: 3rem 0.2rem;
+    margin-bottom: 0;
+  }
+  h3.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+  }
+  .heading-underline {
+    width: 8rem;
+    height: 0.3rem;
+    background-color: rgb(241, 33, 43);
+    margin: 0 auto 2rem;
+  }
+  /*--- portfolio images ---*/
 
-.portfolio img {
-  min-width: 100%;
-  transition: transform 0.5s ease;
-}
-.row.no-padding [class*="col"] {
-  padding: 5px;
-}
-.portfolio img:hover {
-  transform: scale(1.1);
-  cursor: zoom-in;
-}
-.portfolio {
-  overflow: hidden;
-}
-.card {
-  margin: 2rem;
-}
-/*=============end of portfolio section  =============*/
+  .portfolio img {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+  }
+  .row.no-padding [class*="col"] {
+    padding: 5px;
+  }
+  .portfolio img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+  }
+  .portfolio {
+    overflow: hidden;
+  }
+  .card {
+    margin: 2rem;
+  }
+  /*=============end of portfolio section  =============*/
 
-/*============= start clicks  =============*/
+  /*============= start clicks  =============*/
 
+  .col-12 h1 {
+    font-size: 40px;
+  }
+  .col-12 p {
+    font-size: 25px;
+    padding: 0px 150px 0px 150px;
+  }
 
+  .narrow {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  .btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem 1.1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
 
-.col-12 h1 {
-  font-size: 40px;
-}
-.col-12 p {
-  font-size: 25px;
-  padding: 0px 150px 0px 150px;
-}
+  /*============= end develop your skill  =============*/
 
-.narrow {
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-.btn-md {
-  border-width: medium;
-  border-radius: 0;
-  padding: 0.6rem 1.1rem;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
+  .gallery {
+    width: 100%;
+    margin: -50px auto;
+    padding-top: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(248, 233, 182);
+  }
+  .gallery h1 {
+    font-size: 40px;
+  }
+  .gallery p {
+    font-size: 25px;
+  }
+  /*--- start footer ---*/
 
-/*============= end develop your skill  =============*/
+  footer {
+    background-color: #40474e;
+    color: white;
+    padding: 1rem 0.3rem;
+    margin-top: 55px;
+    text-align: center;
+    font-size: 20px;
+  }
+  footer img {
+    width: 300px;
+    height: 70px;
+    margin: 1rem 0;
+  }
+  footer a {
+    color: white;
+  }
+  hr.socket {
+    border-top: 0.2rem solid crimson;
+    width: 100%;
+  }
 
-.gallery {
-  width: 100%;
-  margin: -50px auto;
-  padding-top: 1rem;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: rgb(248, 233, 182);
-}
-.gallery h1 {
-  font-size: 40px;
-}
-.gallery p {
-  font-size: 25px;
-}
-/*--- start footer ---*/
+  .footer-1 p {
+    font-size: 40px;
+    padding-bottom: 15px;
+    letter-spacing: 0, 5px;
+  }
 
-footer {
-  background-color: #40474e;
-  color: white;
-  padding: 1rem 0.3rem;
-  margin-top: 55px;
-  text-align: center;
-  font-size: 20px;
+  /*-- end footer --*/
 }
-footer img {
-  width: 360px;
-  height: 90px;
-  margin: 1rem 0;
-}
-footer a {
-  color: white;
-}
-hr.socket {
-  border-top: 0.2rem solid crimson;
-  width: 100%;
-}
-
-.footer-1 p {
-  font-size: 40px;
-  padding-bottom: 15px;
-  letter-spacing: 0, 5px;
-}
-
-/*-- end footer --*/
-
-  
